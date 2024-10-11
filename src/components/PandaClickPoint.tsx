@@ -89,13 +89,13 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
           />
         </div>
         {isLoading && (
-          <Image
-            src={`/images/card-${randomImage}.png`}
-            alt="Card Image"
-            width={160}
-            height={100}
-            className="absolute top-5 right-6 transition-all duration-150"
-          />
+          // <Image
+          //   src={`/images/card-${randomImage}.png`}
+          //   alt="Card Image"
+          //   width={160}
+          //   height={100}
+          //   className="absolute top-5 right-6 transition-all duration-150"
+          // />
         )}
         {latestPoint !== 0 && (
           <AnimatePresence>

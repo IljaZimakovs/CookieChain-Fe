@@ -18,7 +18,7 @@ interface PandaPointHistoryProps {
 const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
   return (
     <div className="flex w-full flex-col items-center bg-white relative rounded-t-2xl -top-7 p-4 pb-24 font-mitr">
-      <p className="text-black text-[20px] leading-7">Panda Points</p>
+      <p className="text-black text-[20px] leading-7">Cookie Points</p>
       <div className="grid w-full gap-[14px] mt-3">
         {pointData.length > 0 ? (
           pointData
