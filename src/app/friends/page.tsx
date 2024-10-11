@@ -36,9 +36,6 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#1CA774]">
-        <div className="flex w-full font-mitr px-6 py-14">
-          <p className="w-full text-white text-center text-base text-[36px]">Quests</p>
-        </div>
         <div className="flex w-full flex-col items-center px-4 pt-4 pb-32">
           <div className="flex w-full flex-col gap-1 items-start justify-center">
             <p className="w-full text-white text-[28px] text-center font-[500] font-mitr">

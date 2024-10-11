@@ -48,9 +48,6 @@ export default function Home() {
     <>
       <div className="bg-[#1CA774] bg-[url('/images/sky_effect.png')] bg-[length:contain] flex flex-col min-h-screen">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="flex w-full font-mitr px-6 py-14">
-            <p className="w-full text-white text-center text-base text-[36px]">Quests</p>
-          </div>
           <div className="pt-10 px-5 flex items-center justify-center flex-col w-full text-white">
             <img
               alt=""

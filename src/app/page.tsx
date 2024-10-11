@@ -229,9 +229,6 @@ export default function Home() {
       ) : (
         <>
           <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen">
-            <div className="flex w-full font-mitr px-4 py-14">
-              <p className="w-full text-white text-center text-base text-[36px]">Home</p>
-            </div>
             <PandaClickPoint
               totalPoint={totalPoint}
               setTotalPoint={setTotalPoint}
