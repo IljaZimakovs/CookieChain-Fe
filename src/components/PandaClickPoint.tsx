@@ -135,7 +135,8 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
           <div className="flex flex-col gap-4">
             <p className="text-[#313743] text-lg leading-[22px]">Cookie Lives</p>
             <p className="text-[#313743] text-4xl leading-[28px] text-center">
-              {totalPoint.toLocaleString()}
+              5
+              {/* {totalPoint.toLocaleString()} */}
               {/* {totalPoint} */}
             </p>
           </div>

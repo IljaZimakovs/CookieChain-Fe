@@ -85,7 +85,7 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-mitr">Join PandaChain Twitter</p>
+        <p className="text-black text-lg font-mitr">Join CookieChain Twitter</p>
         <p className="text-[#222222] text-sm font-mitr">+300 POINTS</p>
       </div>
       {followed ? (

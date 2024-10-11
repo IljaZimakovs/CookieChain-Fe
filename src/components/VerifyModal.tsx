@@ -108,7 +108,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
         />
         <Drawer.Content className="bg-black flex max-w-xl mx-auto flex-col rounded-t-2xl h-[294px] fixed inset-x-0 bottom-5 z-50 mt-20 border-t-[1.5px] text-white font-mitr p-5">
           <div className="flex w-full flex-col justify-center items-center gap-1">
-            <p className="text-xl text-center">Welcome to PandaChain</p>
+            <p className="text-xl text-center">Welcome to CookieChain</p>
             <p className="text-base text-center mt-1">
               Please enter your name below to get an exclusive card
             </p>

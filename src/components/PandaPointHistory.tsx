@@ -35,7 +35,7 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
                       ? "/images/smile-panda.png"
                       : "/images/sad-panda.png"
                   }
-                  alt="Smile Panda"
+                  alt="Smile Cookie"
                   width={46}
                   height={46}
                 />
@@ -47,7 +47,7 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
               </div>
             ))
         ) : (
-          <p className="text-white text-lg text-center mt-4">No panda point</p>
+          <p className="text-white text-lg text-center mt-4">No Cookie point</p>
         )}
       </div>
     </div>

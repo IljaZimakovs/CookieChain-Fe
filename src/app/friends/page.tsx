@@ -61,7 +61,7 @@ export default function Home() {
             height={300}
           />
           <p className="font-mitr text-xl text-white text-center font-semibold">
-            Panda Invited: {firendLists.length}
+            Cookie Invited: {firendLists.length}
           </p>
           <p className="font-mitr text-base leading-[20px] text-white text-center mt-1">
             Every succussful invitation gives you 1 Cookie BOX

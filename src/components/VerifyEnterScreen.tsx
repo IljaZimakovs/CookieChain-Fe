@@ -102,7 +102,7 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
               </h2>
               <p className="leading-[1.375rem] text-center pb-4 px-8 font-mitr font-medium">
                 A unique twist in the TON universe, you&lsquo;re no ordinary
-                Panda!
+                Cookie!
               </p>
             </div>
 
