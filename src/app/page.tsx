@@ -228,7 +228,7 @@ export default function Home() {
         <VerifyEnterScreen sequenceNumber={sequenceNumber} />
       ) : (
         <>
-          <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen">
+          <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen pt-4">
             <PandaClickPoint
               totalPoint={totalPoint}
               setTotalPoint={setTotalPoint}
