@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <div className="min-h-screen bg-[#1CA774]">
         <div className="flex w-full flex-col items-center px-4 pt-4 pb-32">
-          <div className="flex w-full flex-col gap-1 items-start justify-center">
+          <div className="flex w-full flex-col gap-1 items-start justify-center pt-14">
             <p className="w-full text-white text-[28px] text-center font-[500] font-mitr">
               Invite friends and get more
             </p>

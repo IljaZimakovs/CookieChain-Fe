@@ -75,9 +75,8 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] ${
-        followed ? "bg-[#1CA774]" : "bg-[#22CA8C]"
-      }`}
+      className={`flex items-center px-3 py-2 rounded-[10px] ${followed ? "bg-[#1CA774]" : "bg-[#22CA8C]"
+        }`}
     >
       <img
         src="https://static.duckchain.io/wallet.svg"
@@ -96,25 +95,14 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
         >
           <span className="pointer-events-none relative z-10">
             <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center">
-              <img
-                alt=""
-                loading="lazy"
-                width="16"
-                height="17"
-                decoding="async"
-                data-nimg="1"
-                className="w-5 select-none"
-                src="https://tgdapp.duckchain.io/_next/static/media/success.c375e092.svg"
-                style={{ color: "transparent" }}
-              />
+              ✔
             </div>
           </span>
         </button>
       ) : (
         <a
-          className={`relative block whitespace-nowrap font-bold  text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7 ${
-            isLoading ? "pointer-events-none opacity-50" : ""
-          }`}
+          className={`relative block whitespace-nowrap font-bold  text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7 ${isLoading ? "pointer-events-none opacity-50" : ""
+            }`}
           href="https://x.com/PandaChain_io"
           target="_blank"
           rel="noopener noreferrer"
