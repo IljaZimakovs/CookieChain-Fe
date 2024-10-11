@@ -88,7 +88,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
             className="w-[60%] h-auto drop-shadow-xl"
           />
         </div>
-        {isLoading && (
+        {/* {isLoading && (
           // <Image
           //   src={`/images/card-${randomImage}.png`}
           //   alt="Card Image"
@@ -96,7 +96,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
           //   height={100}
           //   className="absolute top-5 right-6 transition-all duration-150"
           // />
-        )}
+        )} */}
         {latestPoint !== 0 && (
           <AnimatePresence>
             <motion.div
