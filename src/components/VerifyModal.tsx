@@ -88,10 +88,10 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
       onOpenChange={setIsOpen}
       fixed={true}
       closeThreshold={1}
-      disablePreventScroll={true}
+      // disablePreventScroll={true}
       dismissible={true}
       nested={false}
-      preventScrollRestoration={true}
+      // preventScrollRestoration={true}
     >
       <Toaster position="top-center" reverseOrder={isToast} />
       <Drawer.Trigger asChild className="w-full">

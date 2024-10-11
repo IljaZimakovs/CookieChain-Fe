@@ -7,6 +7,7 @@ import axios from "axios";
 import useUserStore from "@/store/useStore";
 import { motion, AnimatePresence } from "framer-motion";
 import useInfoStore from "@/store/useInfo";
+import 'csshake/dist/csshake-slow.min.css';
 
 interface T_PointData {
   _id: string;
@@ -85,18 +86,18 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
             onClick={clickPoint}
             src="/images/cookie_character.png"
             alt="Main Background"
-            className="w-[60%] h-auto drop-shadow-xl"
+            className="shake-hard w-[60%] h-auto drop-shadow-xl"
           />
         </div>
-        {/* {isLoading && (
-          // <Image
-          //   src={`/images/card-${randomImage}.png`}
-          //   alt="Card Image"
-          //   width={160}
-          //   height={100}
-          //   className="absolute top-5 right-6 transition-all duration-150"
-          // />
-        )} */}
+        {isLoading && (
+          <Image
+            src={`/images/card-${randomImage}.png`}
+            alt="Card Image"
+            width={160}
+            height={100}
+            className="absolute top-5 right-6 transition-all duration-150"
+          />
+        )}
         {latestPoint !== 0 && (
           <AnimatePresence>
             <motion.div

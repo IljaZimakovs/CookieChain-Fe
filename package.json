@@ -19,6 +19,7 @@
     "axios": "^1.7.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "csshake": "^1.7.0",
     "eruda": "^3.0.1",
     "framer-motion": "^11.5.2",
     "lucide-react": "^0.436.0",

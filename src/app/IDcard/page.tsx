@@ -31,7 +31,7 @@ export default function Home() {
                   />
                 </div>
                 <img
-                  src={"/images/badge-1.png"}
+                  src={"/images/cookie.png"}
                   alt="Badge level 1"
                   className="w-16 h-16 absolute -top-[30px] -right-4 z-20"
                 />
