@@ -10,6 +10,8 @@ interface T_TelegramFollowCard {
   userId: number;
 }
 
+console.log(process.env.NEXT_PUBLIC_TELEGRAM_BOT_API_KEY)
+
 const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
   followed,
   userId,

@@ -22,8 +22,8 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-ENV NEXT_PUBLIC_BASE_URL=https://api.pandachain.io/api/
-ENV NEXT_PUBLIC_TELEGRAM_BOT_API_KEY=7428746570:AAGE1wUstxc6ol7TqS16OJ_prUMLTZxFMSU
+NEXT_PUBLIC_BASE_URL=https://miniapp-botserver.vercel.app/
+NEXT_PUBLIC_TELEGRAM_BOT_API_KEY=7744112886:AAE9p6UH9AzcxIsha5pCXItst3NptRfjBzM
 
 
 RUN yarn build
