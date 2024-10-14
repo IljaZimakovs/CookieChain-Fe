@@ -75,7 +75,7 @@ function RootInner({ children }: PropsWithChildren) {
     <TonConnectUIProvider
       manifestUrl={manifestUrl}
       actionsConfiguration={{
-        twaReturnUrl: "https://t.me/pandachain_bot/pandaio",
+        twaReturnUrl: "https://t.me/",
       }}
     >
       <SDKProvider acceptCustomStyles debug={debug}>

@@ -108,7 +108,7 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
       ) : (
         <a
           className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7"
-          href="https://t.me/PandaChainAnn"
+          href="https://t.me/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -26,7 +26,7 @@ export default function Home() {
                 <div className="w-full h-full rounded-lg">
                   <img
                     src={"/images/cookie_idcard.jpeg"}
-                    alt="Panda Card"
+                    alt="Cookie Card"
                     className="w-full h-full"
                   />
                 </div>
@@ -40,7 +40,7 @@ export default function Home() {
                 </span>
               </div>
               <h2 className="text-xl leading-1.75rem] text-center mt-4 mb-1 font-mitr">
-                ({user_name}) OrcPanda
+                ({user_name}) OrcCookie
               </h2>
               <p className="font-extralight  leading-[1.375rem] text-center pb-4 font-mitr">
                 Leading the horde, breaking through obstacles in the TON

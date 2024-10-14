@@ -18,7 +18,7 @@ const FriendLists = (firendLists: any) => {
               <p className="text-lg">{index + 1}</p>
               <Image
                 src={"/images/panda.jpg"}
-                alt="Panda Image"
+                alt="Cookie Image"
                 width={36}
                 height={36}
               />

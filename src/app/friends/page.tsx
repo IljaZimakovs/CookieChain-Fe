@@ -56,7 +56,7 @@ export default function Home() {
           <Image
             className="mt-7 mb-4"
             src={"/images/invite_friend.png"}
-            alt="Invite Panda"
+            alt="Invite Cookie"
             width={307}
             height={300}
           />

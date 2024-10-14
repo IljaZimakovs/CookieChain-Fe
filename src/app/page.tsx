@@ -22,7 +22,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
         <div className="w-full flex justify-center py-16 bg-[url('/images/bubbles.png')] bg-[length:cover]">
           <Image
             src={"/images/cookie_jar.png"}
-            alt="Panda Logo"
+            alt="Cookie Logo"
             width={323}
             height={319}
           />
