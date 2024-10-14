@@ -30,10 +30,11 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
                 className="flex w-full justify-between items-center rounded-lg bg-[#22CA8C] border-solid border-2 border-[#22CA8C] text-black font-mitr text-base p-[5px] pr-4 gap-[10px]"
               >
                 <Image
+                  className="rounded-lg"
                   src={
                     point.point > 0
-                      ? "/images/smile-panda.png"
-                      : "/images/sad-panda.png"
+                      ? "/images/smile_cookie.png"
+                      : "/images/sad_cookie.png"
                   }
                   alt="Smile Cookie"
                   width={46}

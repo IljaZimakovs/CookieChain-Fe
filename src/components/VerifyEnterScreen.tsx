@@ -65,26 +65,25 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
   return (
     <>
       {miniVerified ? (
-        <div className="min-h-screen bg-[#F4F7E0]">
-          <div className="flex w-full flex-col px-4 font-[EXO] py-8 items-center">
-            <div className="flex w-full justify-between items-center gap-3">
-              <div className="flex-1 h-1 rounded-full bg-black"></div>
-              <div className="flex-1 h-1 rounded-full bg-black"></div>
-              <div className="flex-1 h-1 rounded-full bg-second_yellow"></div>
-            </div>
-
-            <h2 className="text-3xl leading-[2rem] text-black text-center font-mitr mt-6">
-              Panda Planet ID Card
+        <div className="w-full flex flex-col items-center min-h-screen py-14 px-8 bg-[#1EB17B] font-mitr">
+          <div className="flex w-full justify-center items-center gap-3 pb-8">
+            <div className="w-[15px] h-[15px] rounded-full bg-[#CCE663]"></div>
+            <div className="w-[15px] h-[15px] rounded-full bg-[#CCE663]"></div>
+            <div className="w-[100px] h-[15px] rounded-full bg-[#189869]"></div>
+          </div>
+          <div className="w-full flex bg-white p-4 rounded-2xl flex-col items-center">
+            <h2 className="text-2xl leading-[2rem] text-black text-center font-mitr mt-6">
+              Cookie Planet ID Card
             </h2>
-            <p className="font-semibold text-[1.85rem] leading-none text-black text-center font-mitr mt-2">
+            <p className="font-semibold text-xl leading-none text-black text-center font-mitr mt-2">
               No. {sequenceNumber}
             </p>
             <div className="bg-[#3F3F3F] p-2 mt-10 rounded-3xl text-white">
               <div className="w-full relative">
                 <div className="w-full h-full rounded-lg">
                   <img
-                    src={"/images/panda-card.png"}
-                    alt="Panda Card"
+                    src={"/images/cookie_card.jpeg"}
+                    alt="Cookie Card"
                     className="w-full h-full"
                   />
                 </div>
@@ -106,9 +105,10 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
               </p>
             </div>
 
+          </div>
             <button
               onClick={handleVerify}
-              className="flex w-64 h-10 justify-center items-center text-white font-mitr bg-black rounded-full text-base mt-6 transition-all duration-100"
+              className="flex w-64 h-10 justify-center items-center text-black font-mitr bg-white rounded-full text-base mt-6 transition-all duration-100"
             >
               {isLoading ? (
                 <ClapSpinner
@@ -122,49 +122,40 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
                 <p className="transition-all duration-100">Enter</p>
               )}
             </button>
-          </div>
         </div>
       ) : (
-        <div className="flex w-full flex-col gap-1 justify-center items-center min-h-screen p-5 bg-[#F4F7E0] font-mitr">
-          <p className="text-black text-4xl leading-8 text-start font-semibold">
-            An invitation from PandaChain
-          </p>
-          <p className="w-full text-start text-[#6BB2E9] text-2xl">
-            PLEASE CHECK
-          </p>
-          <div className="flex w-full gap-4 justify-between items-start mt-5">
-            <div className="flex w-full flex-col items-start">
-              <div className="flex justify-normal gap-3">
-                <span className="flex bg-[#6BB2E9] py-0.5 px-4 rounded-full text-white text-[23px] font-[500]">
-                  From
-                </span>
-                <Image
-                  className="relative -top-3"
-                  src={"/images/check.png"}
-                  alt="Check"
-                  width={28}
-                  height={24}
-                />
-              </div>
-              <span className="flex bg-[#6BB2E9] py-0.5 px-4 rounded-full text-white text-[23px] font-[500] -mt-1">
-                PandaChain
+        <div className="w-full min-h-screen py-14 px-8 bg-[#1EB17B] font-mitr">
+          <div className="w-full flex bg-white p-4 rounded-2xl flex-col items-center">
+            <p className="w-full py-4 text-center text-black text-2xl leading-8 font-Rubik">
+              An invitation from CookieChain
+            </p>
+            <div className="flex p-2 items-center">
+              <p className="w-full text-center text-black text-xl pr-1">
+                PLEASE CHECK
+              </p>
+              <Image
+                src={"/images/check.png"}
+                alt="Check"
+                width={28}
+                height={28}
+              />
+            </div>
+            <p className="w-full text-center text-black text-8 pr-1">
+              From CookieChain
+            </p>
+            <div className="flex w-full py-4 gap-4 justify-center items-start mt-5">
+              <span className="flex bg-[#CCE663] py-1 px-4 rounded-full text-black text-[16px] font-[500]">
+                You have one
               </span>
             </div>
             <Image
-              className="flex-1 -mt-2"
-              src={"/images/you-have-one.png"}
-              alt="You have one"
-              width={113}
-              height={113}
+              className="mt-5"
+              src={"/images/post_box.png"}
+              alt="Background"
+              width={220}
+              height={360}
             />
           </div>
-          <Image
-            className="mt-5"
-            src={"/images/bg.png"}
-            alt="Background"
-            width={335}
-            height={360}
-          />
           <VerifyModal
             isOpen={isOpen}
             setIsOpen={setIsOpen}
