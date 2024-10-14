@@ -81,7 +81,7 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] ${followed ? "bg-[#1CA774]" : "bg-[#22CA8C]"
+      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${followed ? "bg-white" : "bg-[#b7e6d4]"
         }`}
     >
       <img

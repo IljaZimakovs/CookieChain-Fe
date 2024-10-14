@@ -49,8 +49,8 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] ${
-        followed ? "bg-background" : "bg-second_yellow"
+      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${
+        followed ? "bg-white" : "bg-[#b7e6d4]"
       }`}
     >
       <img

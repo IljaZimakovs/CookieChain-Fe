@@ -65,13 +65,13 @@ const DailyCheckCard: React.FC<T_DailyCheckCard> = ({ setDailyTask }) => {
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] ${followed ? "bg-[#1CA774]" : "bg-[#22CA8C]"
+      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${followed ? "bg-white" : "bg-[#b7e6d4]"
         }`}
     >
       <img src="/images/daily-check.png" alt="Daily Check" className="w-9" />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
         <p className="text-black text-lg font-mitr">Daily Check In</p>
-        <p className="text-[#222222] text-sm font-mitr">+{dailyPoint} POINTS</p>
+        <p className="text-[#858494] text-sm font-Rubik">+{dailyPoint} POINTS</p>
       </div>
       {!followed ? (
         <button

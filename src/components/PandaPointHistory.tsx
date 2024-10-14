@@ -27,7 +27,7 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
             .map((point, index) => (
               <div
                 key={index}
-                className="flex w-full justify-between items-center rounded-lg bg-[#22CA8C] border-solid border-2 border-[#22CA8C] text-black font-mitr text-base p-[5px] pr-4 gap-[10px]"
+                className="flex w-full justify-between items-center rounded-lg border-solid border-2 border-[#b7e6d4] text-[#1EB17B] font-mitr text-base p-[5px] pr-4 gap-[10px]"
               >
                 <Image
                   className="rounded-lg"

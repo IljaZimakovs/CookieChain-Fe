@@ -28,7 +28,7 @@ const WalletConnectCard: React.FC<T_WalletConnectCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] ${wallet_address ? "bg-[#1CA774]" : "bg-[#22CA8C]"
+      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${wallet_address ? "bg-white" : "bg-[#b7e6d4]"
         }`}
     >
       <img src="https://static.duckchain.io/x.svg" alt="" className="w-9" />
