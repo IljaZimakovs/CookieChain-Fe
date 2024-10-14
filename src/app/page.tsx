@@ -19,7 +19,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
   return (
     <div className="flex w-full min-h-screen flex-col items-center justify-between bg-[#1CA774] pb-14 gap-6">
       <div className="w-full bg-[#1CA774] bg-[url('/images/preloading_background.png')] bg-[length:100%_100%] py-14">
-        <div className="w-full flex justify-center py-16 bg-[url('/images/bubbles.png')] bg-[length:cover]">
+        <div className="w-full flex justify-center pt-16 bg-[url('/images/bubbles.png')] bg-[length:cover]">
           <Image
             src={"/images/cookie_jar.png"}
             alt="Cookie Logo"
