@@ -78,14 +78,14 @@ export const Navbar = () => {
               }}
               className={`relative flex cursor-pointer flex-col items-center justify-center w-full py-1.5 gap-1.5 rounded-lg ${
                 active === index
-                  ? "bg-[#22CA8C] !text-black"
-                  : "bg-transparent text-[#9db2ce]"
+                  ? "bg-[#22CA8C] !text-white"
+                  : "bg-transparent text-[#D9D9D9]"
               }`}
             >
               {item.icon(active === index ? "text-gray-300" : "white")}
               <span
                 className={`z-10 text-sm leading-tight font-mitr ${
-                  active === index ? "text-black" : "text-[#9db2ce]"
+                  active === index ? "text-white" : "text-[#D9D9D9]"
                 }`}
               >
                 {item.title}
