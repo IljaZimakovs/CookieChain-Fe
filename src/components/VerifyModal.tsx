@@ -95,7 +95,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
     >
       <Toaster position="top-center" reverseOrder={isToast} />
       <Drawer.Trigger asChild className="w-full">
-        <button className="flex w-64 h-10 justify-center items-center text-[#0D524D] font-mitr bg-white rounded-full text-base mt-6">
+        <button className="flex w-64 h-10 justify-center items-center text-[#0D524D] font-Rubik bg-white rounded-full text-base mt-6">
           Enter
         </button>
       </Drawer.Trigger>
@@ -106,7 +106,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
             backdropFilter: "blur(0.9px)",
           }}
         />
-        <Drawer.Content className="bg-white flex max-w-xl mx-auto flex-col rounded-t-2xl h-[294px] fixed inset-x-0 bottom-5 z-50 mt-20 border-t-[1.5px] text-black font-mitr p-5">
+        <Drawer.Content className="bg-white flex max-w-xl mx-auto flex-col rounded-t-2xl h-[294px] fixed inset-x-0 bottom-5 z-50 mt-20 border-t-[1.5px] text-black font-Rubik p-5">
           <div className="flex w-full flex-col justify-center items-center gap-1">
             <p className="text-xl text-center">Welcome to CookieChain</p>
             <p className="text-base text-center mt-1">
@@ -126,7 +126,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
             />
             <button
               onClick={handleVerify}
-              className="flex w-64 h-10 justify-center items-center text-white font-mitr bg-[#189869] rounded-full text-base mt-10 transition-all duration-100"
+              className="flex w-64 h-10 justify-center items-center text-white font-Rubik bg-[#189869] rounded-full text-base mt-10 transition-all duration-100"
             >
               {isLoading ? (
                 <ClapSpinner

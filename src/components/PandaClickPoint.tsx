@@ -109,7 +109,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
                 }`}
             >
               <p
-                className={`font-mitr text-lg ${latestPoint > 0 ? "text-[#313743]" : "text-gray-900"
+                className={`font-Rubik text-lg ${latestPoint > 0 ? "text-[#313743]" : "text-gray-900"
                   }`}
               >
                 {latestPoint > 0 ? "+" : ""}
@@ -125,7 +125,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
             width={333}
             height={71}
           /> */}
-        <div className="w-full flex justify-between gap-1 bg-[url('/images/points_background.png')] bg-[length:100%_100%] rounded-[15] mt-14 px-6 py-4 font-mitr">
+        <div className="w-full flex justify-between gap-1 bg-[url('/images/points_background.png')] bg-[length:100%_100%] rounded-[15] mt-14 px-6 py-4 font-Rubik">
           <div className="flex flex-col gap-4">
             <p className="text-[#313743] text-lg leading-[22px]">Cookie Points</p>
             <p className="text-[#313743] text-4xl leading-[28px] text-center">

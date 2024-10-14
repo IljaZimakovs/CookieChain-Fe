@@ -29,12 +29,12 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
         </div>
       </div>
       <Image src={"/images/preloading_logo.png"} alt="Logo 1" width={212} height={36} />
-      <p className="text-[27px] px-5 font-mitr text-center font-[500] text-white">
+      <p className="text-[27px] px-5 font-Rubik text-center font-[500] text-white">
         CookieChain Pre-Testnet is Now Live!
       </p>
 
       <div className="flex w-full flex-col gap-2 -mt-7 px-5">
-        <p className="text-[16px] leading-7 text-white text-center font-mitr">
+        <p className="text-[16px] leading-7 text-white text-center font-Rubik">
           Loading...
         </p>
         <Progress

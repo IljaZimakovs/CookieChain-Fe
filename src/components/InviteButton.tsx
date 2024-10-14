@@ -60,7 +60,7 @@ const InviteButton = (userId: any) => {
       <Toaster position="top-center" reverseOrder={isToast} />
       <a
         href={inviteLink}
-        className="flex-1 flex h-10 bg-white text-black text-base font-semibold font-mitr rounded-full justify-center items-center"
+        className="flex-1 flex h-10 bg-white text-black text-base font-semibold font-Rubik rounded-full justify-center items-center"
       >
         Invite Friends
       </a>

@@ -65,17 +65,17 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
   return (
     <>
       {miniVerified ? (
-        <div className="w-full flex flex-col items-center min-h-screen py-14 px-8 bg-[#1EB17B] font-mitr">
+        <div className="w-full flex flex-col items-center min-h-screen py-14 px-8 bg-[#1EB17B] font-Rubik">
           <div className="flex w-full justify-center items-center gap-3 pb-8">
             <div className="w-[15px] h-[15px] rounded-full bg-[#CCE663]"></div>
             <div className="w-[15px] h-[15px] rounded-full bg-[#CCE663]"></div>
             <div className="w-[100px] h-[15px] rounded-full bg-[#189869]"></div>
           </div>
           <div className="w-full flex bg-white p-4 rounded-2xl flex-col items-center">
-            <h2 className="text-2xl leading-[2rem] text-black text-center font-mitr mt-6">
+            <h2 className="text-2xl leading-[2rem] text-black text-center font-Rubik mt-6">
               Cookie Planet ID Card
             </h2>
-            <p className="font-semibold text-xl leading-none text-black text-center font-mitr mt-2">
+            <p className="font-semibold text-xl leading-none text-black text-center font-Rubik mt-2">
               No. {sequenceNumber}
             </p>
             <div className="bg-[#3F3F3F] p-2 mt-10 rounded-3xl text-white">
@@ -92,14 +92,14 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
                   alt="Badge level 1"
                   className="w-16 h-16 absolute -top-[30px] -right-4 z-20"
                 />
-                <span className="absolute bg-[#6BB2E9] -top-[34px] right-9 z-10 py-1 px-4 rounded-full border-[2px] border-black text-white font-mitr text-sm">
+                <span className="absolute bg-[#6BB2E9] -top-[34px] right-9 z-10 py-1 px-4 rounded-full border-[2px] border-black text-white font-Rubik text-sm">
                   LEVEL 1
                 </span>
               </div>
-              <h2 className="text-xl leading-[1.75rem] text-center mt-4 mb-1 font-mitr text-second_yellow">
+              <h2 className="text-xl leading-[1.75rem] text-center mt-4 mb-1 font-Rubik text-second_yellow">
                 {IdName}
               </h2>
-              <p className="leading-[1.375rem] text-center pb-4 px-8 font-mitr font-medium">
+              <p className="leading-[1.375rem] text-center pb-4 px-8 font-Rubik font-medium">
                 A unique twist in the TON universe, you&lsquo;re no ordinary
                 Cookie!
               </p>
@@ -108,7 +108,7 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
           </div>
             <button
               onClick={handleVerify}
-              className="flex w-64 h-10 justify-center items-center text-black font-mitr bg-white rounded-full text-base mt-6 transition-all duration-100"
+              className="flex w-64 h-10 justify-center items-center text-black font-Rubik bg-white rounded-full text-base mt-6 transition-all duration-100"
             >
               {isLoading ? (
                 <ClapSpinner
@@ -124,7 +124,7 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
             </button>
         </div>
       ) : (
-        <div className="w-full min-h-screen py-14 px-8 bg-[#1EB17B] font-mitr">
+        <div className="w-full min-h-screen py-14 px-8 bg-[#1EB17B] font-Rubik">
           <div className="w-full flex bg-white p-4 rounded-2xl flex-col items-center">
             <p className="w-full py-4 text-center text-black text-2xl leading-8 font-Rubik">
               An invitation from CookieChain

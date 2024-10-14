@@ -59,8 +59,8 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-mitr">Retweet and Like</p>
-        <p className="text-[#222222] text-sm font-mitr">+20 POINTS</p>
+        <p className="text-black text-lg font-Rubik">Retweet and Like</p>
+        <p className="text-[#222222] text-sm font-Rubik">+20 POINTS</p>
       </div>
       {followed ? (
         <button
@@ -92,7 +92,7 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
           rel="noopener noreferrer"
         >
           <span onClick={followTwitterPost} className="relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-mitr">
+            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-Rubik">
               {isLoading ? (
                 <CircleSpinner
                   size={18}

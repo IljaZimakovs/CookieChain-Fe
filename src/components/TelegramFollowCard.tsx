@@ -90,8 +90,8 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-mitr">Join Telegram Channel</p>
-        <p className="text-[#222222] text-sm font-mitr">+500 POINTS</p>
+        <p className="text-black text-lg font-Rubik">Join Telegram Channel</p>
+        <p className="text-[#222222] text-sm font-Rubik">+500 POINTS</p>
       </div>
       {followed ? (
         <button
@@ -113,7 +113,7 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
           rel="noopener noreferrer"
         >
           <span className="relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-mitr">
+            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-Rubik">
               {isLoading ? (
                 <CircleSpinner
                   size={18}
