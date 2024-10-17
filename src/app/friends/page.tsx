@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#1CA774]">
-        <h2 className="text-[24px] py-10 font-rubik font-medium text-center">Friends</h2>
+        <h2 className="text-[24px] text-white py-10 font-rubik font-medium text-center">Friends</h2>
         <div className="flex w-full flex-col items-center px-4 pt-2 pb-32">
           <div className="flex w-full flex-col gap-4 items-start justify-center">
             <p className="w-full text-[24px] text-white text-center font-[500] font-Rubik">
