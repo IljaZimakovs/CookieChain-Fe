@@ -136,7 +136,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
           </div>
         </div>
       </div>
-      <div className="px-2 w-full">
+      <div className="px-2 w-full pb-[50px]">
         <PandaPointHistory pointData={pointData} />
       </div>
     </>
