@@ -30,7 +30,7 @@ const Progress = React.forwardRef<
           r={radius}
           cx="50"
           cy="50"
-        />
+        /> 
         {/* Progress circle */}
         <circle
           className="text-white transition-all duration-300"
