@@ -36,37 +36,47 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#1CA774]">
-        <div className="flex w-full flex-col items-center px-4 pt-4 pb-32">
-          <div className="flex w-full flex-col gap-1 items-start justify-center pt-14">
-            <p className="w-full text-white text-[28px] text-center font-[500] font-rubik">
-              Invite friends and get more
+        <h2 className="text-[24px] py-10 font-rubik font-medium text-center">Friends</h2>
+        <div className="flex w-full flex-col items-center px-4 pt-2 pb-32">
+          <div className="flex w-full flex-col gap-4 items-start justify-center">
+            <p className="w-full text-[24px] text-white text-center font-[500] font-Rubik">
+              Invite friends and
             </p>
-            <div className="flex justify-center w-full gap-2 items-end">
-              <p className="text-white text-[28px] font-[500] font-rubik mb-1">
-                Cookie BOX
+            <p className="w-full text-white text-[24px] text-center font-[500] font-Rubik">
+              get more
+            </p>
+            <div className="flex justify-center items-center w-full pt-4 gap-2">
+              <p className="text-white text-[20px] font-medium font-Rubik mb-1">
+                MYSTERYBOX
               </p>
               <Image
                 src={"/images/invite-box.png"}
                 alt="Invite Box"
-                width={55}
-                height={53}
+                width={29}
+                height={27}
               />
             </div>
+            <div className="w-full py-8 flex justify-center">
+              <hr className="border-0 w-[207px] h-[1.5px] bg-gradient-to-r from-[#1EB17B] via-[#24DF9A] to-[#1EB17B]" />
+            </div>
           </div>
+          <p className="font-Rubik text-[20px] text-white text-center font-semibold mb-2">
+            Cookie Invited: {firendLists.length}
+          </p>
+          <p className="font-Rubik text-[16px] leading-[20px] text-white text-center mt-1">
+            Every succussful invitation gives you
+          </p>
+          <p className="font-Rubik text-[16px] leading-[20px] text-white text-center mt-1">
+            1 MYSTERY BOX
+          </p>
+          <InviteButton userId={userId} />
           <Image
             className="mt-7 mb-4"
             src={"/images/invite_friend.png"}
             alt="Invite Cookie"
-            width={307}
-            height={300}
+            width={337}
+            height={224}
           />
-          <p className="font-rubik text-xl text-white text-center font-semibold">
-            Cookie Invited: {firendLists.length}
-          </p>
-          <p className="font-rubik text-base leading-[20px] text-white text-center mt-1">
-            Every succussful invitation gives you 1 Cookie BOX
-          </p>
-          <InviteButton userId={userId} />
           <FriendLists firendLists={firendLists} />
         </div>
       </div>

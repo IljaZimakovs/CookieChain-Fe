@@ -49,9 +49,7 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${
-        followed ? "bg-white" : "bg-[#b7e6d4]"
-      }`}
+      className="flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4]"
     >
       <img
         src="https://static.duckchain.io/wallet.svg"
@@ -59,34 +57,14 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-rubik">Retweet and Like</p>
-        <p className="text-[#222222] text-sm font-rubik">+20 POINTS</p>
+        <p className="text-black text-[16px] font-medium font-rubik">Retweet and Like</p>
+        <p className="text-[#858494] text-[12px] font-rubik">+20 POINTS</p>
       </div>
       {followed ? (
-        <button
-          className="relative block whitespace-nowrap font-blod select-none active:scale-95 bg-[#999999] text-black pointer-events-none rounded-lg w-7 pb-1 h-7"
-          disabled
-          type="button"
-        >
-          <span className="pointer-events-none relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center">
-              <img
-                alt=""
-                loading="lazy"
-                width="16"
-                height="17"
-                decoding="async"
-                data-nimg="1"
-                className="w-5 select-none"
-                src="https://tgdapp.duckchain.io/_next/static/media/success.c375e092.svg"
-                style={{ color: "transparent" }}
-              />
-            </div>
-          </span>
-        </button>
+        <img className="w-[21px]" src="./images/checked.png" />
       ) : (
         <a
-          className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7"
+          className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-8 pb-1 h-8"
           href="https://twitter.com/intent/like?tweet_id=1830988249562783782"
           target="_blank"
           rel="noopener noreferrer"
@@ -102,7 +80,10 @@ const TwitterPostFollowCard: React.FC<T_TwitterPostFollowCard> = ({
                   loading={isLoading}
                 />
               ) : (
-                <p>GO</p>
+                <div className="flex items-center">
+                  <p className="text-[20px] text-[#1EB17B] font-rubik font-medium">GO</p>
+                  <img src="./images/arrow.png" className="w-[24px] h-[24px]" />
+                </div>
               )}
             </div>
           </span>

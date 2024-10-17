@@ -81,6 +81,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
   return (
     <>
       <div className="flex w-full flex-col px-6 h-[500px] relative">
+        <h2 className="text-[24px] py-10 font-rubik font-medium text-center">Home</h2>
         <div className="flex justify-center items-center py-4 bg-[url('/images/charact_background.png')] bg-[length:100%_100%]">
           <img
             onClick={clickPoint}
@@ -125,25 +126,19 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
             width={333}
             height={71}
           /> */}
-        <div className="w-full flex justify-between gap-1 bg-[url('/images/points_background.png')] bg-[length:100%_100%] rounded-[15] mt-14 px-6 py-4 font-rubik">
-          <div className="flex flex-col gap-4">
-            <p className="text-[#313743] text-lg leading-[22px] font-rubik">Cookie Points</p>
-            <p className="text-[#313743] text-4xl leading-[28px] text-center">
+        <div className="w-full flex justify-between gap-1 bg-[url('/images/points_background.png')] bg-[length:100%_100%] rounded-[15] mt-7 px-6 py-3 font-rubik">
+          <div className="flex flex-col gap-2">
+            <p className="text-[#313743] text-[14px] font-medium leading-[18px] font-rubik">Cookie Points</p>
+            <p className="text-[#313743] text-[20px] font-medium leading-[24px] text-center">
               {totalPoint.toLocaleString()}
-              {/* {totalPoint} */}
-            </p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <p className="text-[#313743] text-lg leading-[22px]">Cookie Lives</p>
-            <p className="text-[#313743] text-4xl leading-[28px] text-center">
-              5
-              {/* {totalPoint.toLocaleString()} */}
-              {/* {totalPoint} */}
+              <span className="font-light">/3,000</span>
             </p>
           </div>
         </div>
       </div>
-      <PandaPointHistory pointData={pointData} />
+      <div className="px-2">
+        <PandaPointHistory pointData={pointData} />
+      </div>
     </>
   );
 };

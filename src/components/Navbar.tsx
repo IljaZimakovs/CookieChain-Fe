@@ -14,22 +14,22 @@ export const route: Route[] = [
   {
     path: "/",
     title: "Home",
-    icon: (color: string) => <Icons.navigator.home color={color} />,
+    icon: (opacity: string) => <img className={opacity} src="/images/home.svg" alt="Home" />,
   },
   {
     path: "/quests",
     title: "Quests",
-    icon: (color: string) => <Icons.navigator.quest color={color} />,
+    icon: (opacity: string) => <img className={opacity} src="/images/quests.svg" alt="Quests" />,
   },
   {
     path: "/friends",
     title: "Friends",
-    icon: (color: string) => <Icons.navigator.friend color={color} />,
+    icon: (opacity: string) => <img className={opacity} src="/images/friends.svg" alt="Friends" />,
   },
   {
     path: "/IDcard",
     title: "ID Card",
-    icon: (color: string) => <Icons.navigator.card color={color} />,
+    icon: (opacity: string) => <img className={opacity} src="/images/id.svg" alt="ID Card" />,
   },
 ];
 
@@ -64,9 +64,8 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`fixed bottom-0 z-20 bg-[#189869] py-4 w-full px-4 ${
-        active === 0 || active === 1 ? "bg-[#189869]" : ""
-      }`}
+      className={`fixed bottom-0 z-20 bg-[#189869] py-4 w-full px-4 ${active === 0 || active === 1 ? "bg-[#189869]" : ""
+        }`}
     >
       <div className="rounded-lg bg-[#189869] py-3 gap-1 right-4 left-4 flex justify-between">
         {route.map((item, index) => {
@@ -76,17 +75,15 @@ export const Navbar = () => {
               onClick={() => {
                 router.push(item.path);
               }}
-              className={`relative flex cursor-pointer flex-col items-center justify-center w-full py-1.5 gap-1.5 rounded-lg ${
-                active === index
+              className={`relative flex cursor-pointer flex-col items-center justify-center w-full py-1.5 gap-1.5 rounded-lg ${active === index
                   ? "bg-[#22CA8C] !text-white"
                   : "bg-transparent text-[#D9D9D9]"
-              }`}
-            >
-              {item.icon(active === index ? "text-gray-300" : "white")}
-              <span
-                className={`z-10 text-sm leading-tight font-rubik ${
-                  active === index ? "text-white" : "text-[#D9D9D9]"
                 }`}
+            >
+              {item.icon(active === index ? "opacity-100" : "opacity-[.72]")}
+              <span
+                className={`z-10 text-[14px] leading-tight font-rubik ${active === index ? "text-white" : "text-[#D9D9D9]"
+                  }`}
               >
                 {item.title}
               </span>

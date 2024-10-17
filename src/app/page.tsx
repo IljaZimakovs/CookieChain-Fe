@@ -28,7 +28,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
           />
         </div>
       </div>
-      <div className="flex gap-1 p-1 px-[10px] items-center bg-white border border-[black] rounded-md">
+      <div className="flex mt-5 gap-1 p-1 px-[10px] items-center bg-white border border-[black] rounded-md">
         <Image
           src={"/images/cookie_logo.png"}
           alt="Cookie Logo"
@@ -49,7 +49,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
         CookieChain Pre-Testnet is Now Live!
       </p>
 
-      <div className="flex w-full flex-col items-center gap-3 mt-7 px-5">
+      <div className="flex w-full flex-col items-center gap-3 mt-5 px-5">
         <p className="text-[16px] leading-7 text-white text-center font-rubik">
           Loading
         </p>
@@ -234,7 +234,9 @@ export default function Home() {
     return () => clearTimeout(timeoutId);
   }, [walletAddress, wallet]);
 
-  return <PreLoadingScreen progress={progress} />;
+  if (loading) {
+    return <PreLoadingScreen progress={progress} />;
+  }
 
   return (
     <>
@@ -242,7 +244,7 @@ export default function Home() {
         <VerifyEnterScreen sequenceNumber={sequenceNumber} />
       ) : (
         <>
-          <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen pt-14">
+          <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen">
             <PandaClickPoint
               totalPoint={totalPoint}
               setTotalPoint={setTotalPoint}

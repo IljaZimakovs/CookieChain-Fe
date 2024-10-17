@@ -56,14 +56,16 @@ const InviteButton = (userId: any) => {
   };
 
   return (
-    <div className="flex w-full justify-between gap-4 mt-6">
+    <div className="flex w-full justify-center gap-4 mt-6">
       <Toaster position="top-center" reverseOrder={isToast} />
-      <a
-        href={inviteLink}
-        className="flex-1 flex h-10 bg-white text-black text-base font-semibold font-rubik rounded-full justify-center items-center"
-      >
-        Invite Friends
-      </a>
+      <div className="w-[190px]">
+        <a
+          href={inviteLink}
+          className="flex-1 flex h-10 bg-white text-black text-base font-semibold font-rubik rounded-full justify-center items-center"
+        >
+          Invite Friends
+        </a>
+      </div>
       <button
         onClick={handleCopy}
         className="flex w-10 h-10 bg-white rounded-full justify-center items-center"

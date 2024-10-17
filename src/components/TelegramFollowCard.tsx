@@ -81,8 +81,7 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
 
   return (
     <div
-      className={`flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4] ${followed ? "bg-white" : "bg-[#b7e6d4]"
-        }`}
+      className="flex items-center px-3 py-2 rounded-[10px] border-solid border-2 border-[#b7e6d4]"
     >
       <img
         src="https://static.duckchain.io/telegram.svg"
@@ -90,30 +89,20 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-rubik">Join Telegram Channel</p>
-        <p className="text-[#222222] text-sm font-rubik">+500 POINTS</p>
+        <p className="text-black text-[16px] font-medium font-rubik">Join Telegram Channel</p>
+        <p className="text-[#858494] text-[12px] font-rubik">+500 POINTS</p>
       </div>
       {followed ? (
-        <button
-          className="relative block whitespace-nowrap font-blod select-none active:scale-95 bg-[#999999] text-black pointer-events-none rounded-lg w-7 pb-1 h-7"
-          disabled
-          type="button"
-        >
-          <span className="pointer-events-none relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center">
-              ✔
-            </div>
-          </span>
-        </button>
+        <img className="w-[21px]" src="./images/checked.png" />
       ) : (
         <a
-          className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7"
+          className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-8 pb-1 h-8"
           href="https://t.me/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <span className="relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-rubik">
+            <div className="w-8 h-8 cursor-pointer rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-rubik">
               {isLoading ? (
                 <CircleSpinner
                   size={18}
@@ -123,7 +112,10 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
                   loading={isLoading}
                 />
               ) : (
-                <p>GO</p>
+                <div className="flex items-center">
+                  <p className="text-[20px] text-[#1EB17B] font-rubik font-medium">GO</p>
+                  <img src="./images/arrow.png" className="w-[24px] h-[24px]"/>
+                </div>
               )}
             </div>
           </span>
