@@ -18,8 +18,8 @@ import MysteryBoxModal from "@/components/MysteryBoxModal";
 const PreLoadingScreen = ({ progress }: { progress: number }) => {
   return (
     <div className="flex w-full min-h-screen flex-col items-center justify-between bg-[#1EB17B] pb-14 gap-6">
-      <div className="w-full bg-[#22CA8C] bg-[url('/images/preloading_background.png'),url('/images/bubbles.png')] bg-[length:100%_100%,cover] bg-no-repeat py-14">
-        <div className="w-full flex justify-center pt-16">
+      <div className="w-full bg-[#22CA8C] bg-[url('/images/preloading_background.png'),url('/images/bubbles.png')] bg-[length:100%_100%,cover] bg-no-repeat pb-10">
+        <div className="w-full flex justify-center pt-10">
           <Image
             src={"/images/cookie_jar.png"}
             alt="Cookie Logo"
