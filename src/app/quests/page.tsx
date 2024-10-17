@@ -49,7 +49,7 @@ export default function Home() {
       <div className="bg-[#1CA774] bg-[url('/images/sky_effect.png')] bg-[length:contain] flex flex-col min-h-screen">
         <div className="absolute top-0 left-0 w-full h-full">
           <h2 className="text-[24px] text-white py-10 font-rubik font-medium text-center">Quests</h2>
-          <div className="pt-10 px-5 flex items-center justify-center flex-col w-full text-white">
+          <div className="pt-4 px-5 flex items-center justify-center flex-col w-full text-white">
             <img
               alt=""
               loading="lazy"
@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
           <div className="px-2 w-full bg-[#1CA774] py-[50px]">
-            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-10 z-20 mt-7 flex-grow overflow-hidden">
+            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-10 z-20 flex-grow overflow-hidden">
               <TaskStatusView
                 currentTask={
                   point > 3000

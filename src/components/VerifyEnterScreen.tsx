@@ -96,7 +96,7 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
               </div>
               <button
                 onClick={handleVerify}
-                className="flex w-full h-10 justify-center items-center text-white font-rubik bg-[#189869] rounded-full text-base mt-10 transition-all duration-100"
+                className="flex w-full h-10 justify-center items-center text-white font-rubik bg-[#189869] rounded-full text-base mt-6 transition-all duration-100"
               >
                 {isLoading ? (
                   <ClapSpinner
