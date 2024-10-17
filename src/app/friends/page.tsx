@@ -38,11 +38,11 @@ export default function Home() {
       <div className="min-h-screen bg-[#1CA774]">
         <div className="flex w-full flex-col items-center px-4 pt-4 pb-32">
           <div className="flex w-full flex-col gap-1 items-start justify-center pt-14">
-            <p className="w-full text-white text-[28px] text-center font-[500] font-Rubik">
+            <p className="w-full text-white text-[28px] text-center font-[500] font-rubik">
               Invite friends and get more
             </p>
             <div className="flex justify-center w-full gap-2 items-end">
-              <p className="text-white text-[28px] font-[500] font-Rubik mb-1">
+              <p className="text-white text-[28px] font-[500] font-rubik mb-1">
                 Cookie BOX
               </p>
               <Image
@@ -60,10 +60,10 @@ export default function Home() {
             width={307}
             height={300}
           />
-          <p className="font-Rubik text-xl text-white text-center font-semibold">
+          <p className="font-rubik text-xl text-white text-center font-semibold">
             Cookie Invited: {firendLists.length}
           </p>
-          <p className="font-Rubik text-base leading-[20px] text-white text-center mt-1">
+          <p className="font-rubik text-base leading-[20px] text-white text-center mt-1">
             Every succussful invitation gives you 1 Cookie BOX
           </p>
           <InviteButton userId={userId} />

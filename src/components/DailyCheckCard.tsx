@@ -70,8 +70,8 @@ const DailyCheckCard: React.FC<T_DailyCheckCard> = ({ setDailyTask }) => {
     >
       <img src="/images/daily-check.png" alt="Daily Check" className="w-9" />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-Rubik">Daily Check In</p>
-        <p className="text-[#858494] text-sm font-Rubik">+{dailyPoint} POINTS</p>
+        <p className="text-black text-lg font-rubik">Daily Check In</p>
+        <p className="text-[#858494] text-sm font-rubik">+{dailyPoint} POINTS</p>
       </div>
       {!followed ? (
         <button
@@ -91,7 +91,7 @@ const DailyCheckCard: React.FC<T_DailyCheckCard> = ({ setDailyTask }) => {
           className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-7 pb-1 h-7"
         >
           <span className="relative z-10">
-            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-Rubik">
+            <div className="w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-rubik">
               GO
             </div>
           </span>

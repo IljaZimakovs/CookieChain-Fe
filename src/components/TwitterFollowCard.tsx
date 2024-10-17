@@ -84,8 +84,8 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
         className="w-9"
       />
       <div className="ml-3 w-full font-semibold flex-1 text-sm leading-tight  text-white ">
-        <p className="text-black text-lg font-Rubik">Join CookieChain Twitter</p>
-        <p className="text-[#222222] text-sm font-Rubik">+300 POINTS</p>
+        <p className="text-black text-lg font-rubik">Join CookieChain Twitter</p>
+        <p className="text-[#222222] text-sm font-rubik">+300 POINTS</p>
       </div>
       {followed ? (
         <button
@@ -110,7 +110,7 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
           <span className="relative z-10">
             <div
               onClick={followTwitter}
-              className={`w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-Rubik`}
+              className={`w-8 h-8 cursor-pointer bg-black rounded-lg text-sm font-bold flex items-center justify-center text-[#FFDA00] font-rubik`}
             >
               {isLoading ? (
                 <p className="text-white">{countDown}</p>

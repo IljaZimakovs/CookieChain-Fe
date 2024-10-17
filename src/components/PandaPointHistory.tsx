@@ -17,7 +17,7 @@ interface PandaPointHistoryProps {
 
 const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
   return (
-    <div className="flex w-full flex-col items-center bg-white relative rounded-t-2xl -top-7 p-4 pb-24 font-Rubik">
+    <div className="flex w-full flex-col items-center bg-white relative rounded-t-2xl -top-7 p-4 pb-24 font-rubik">
       <p className="text-black text-[20px] leading-7">Cookie Points</p>
       <div className="grid w-full gap-[14px] mt-3">
         {pointData.length > 0 ? (
@@ -27,7 +27,7 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
             .map((point, index) => (
               <div
                 key={index}
-                className="flex w-full justify-between items-center rounded-lg border-solid border-2 border-[#b7e6d4] text-[#1EB17B] bg-[#b7e6d4] font-Rubik text-base p-[5px] pr-4 gap-[10px]"
+                className="flex w-full justify-between items-center rounded-lg border-solid border-2 border-[#b7e6d4] text-[#1EB17B] bg-[#b7e6d4] font-rubik text-base p-[5px] pr-4 gap-[10px]"
               >
                 <Image
                   className="rounded-lg"

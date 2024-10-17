@@ -60,7 +60,7 @@ export default function Home() {
               src="/images/cookie_quests.png"
               style={{ color: "transparent" }}
             />
-            <p className="font-medium mt-4 leading-[0.875rem] font-Rubik">
+            <p className="font-medium mt-4 leading-[0.875rem] font-rubik">
               {user_name}{" "}
             </p>
             <div className="w-full relative mt-8">
@@ -70,7 +70,7 @@ export default function Home() {
                   point > 3000 ? (100 / 10000) * point : (100 / 3000) * point
                 }
               />
-              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold text-lg font-Rubik">
+              <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold text-lg font-rubik">
                 {point} / {point > 3000 ? 10000 : 3000}
               </p>
             </div>

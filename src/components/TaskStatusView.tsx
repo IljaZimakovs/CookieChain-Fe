@@ -8,7 +8,7 @@ const TaskStatusView: React.FC<T_TaskStatusView> = ({
   totalTask,
 }) => {
   return (
-    <h2 className="text-white text-xl font-semibold mb-4 font-Rubik">
+    <h2 className="text-white text-xl font-semibold mb-4 font-rubik">
       Task ({currentTask + "/" + totalTask})
     </h2>
   );

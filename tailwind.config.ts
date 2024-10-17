@@ -76,7 +76,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        mitr: ["Mitr", "serif"],
+        rubik: ["Rubik", "serif"],
       },
     },
   },

@@ -84,7 +84,7 @@ export const Navbar = () => {
             >
               {item.icon(active === index ? "text-gray-300" : "white")}
               <span
-                className={`z-10 text-sm leading-tight font-Rubik ${
+                className={`z-10 text-sm leading-tight font-rubik ${
                   active === index ? "text-white" : "text-[#D9D9D9]"
                 }`}
               >
