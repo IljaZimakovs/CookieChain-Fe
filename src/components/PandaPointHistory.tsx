@@ -17,9 +17,9 @@ interface PandaPointHistoryProps {
 
 const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
   return (
-    <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat">
+    <div className="w-full bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat">
       <p className="text-black text-[20px] font-medium pt-10 px-4 font-rubik leading-7">Cookie Points</p>
-      <div className="w-full bg-white relative rounded-t-2xl top-2 p-4 pt-2 pb-24 font-rubik">
+      <div className="w-full bg-white min-h-[320px] relative rounded-t-2xl top-2 p-4 pt-2 pb-24 font-rubik">
         <div className="grid w-full gap-[14px]">
           {pointData.length > 0 ? (
             pointData
@@ -49,7 +49,7 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
                 </div>
               ))
           ) : (
-            <p className="text-white text-lg text-center mt-4">No Cookie point</p>
+            <p className="text-black font-rubik font-medium text-lg text-center mt-4">No Cookie point</p>
           )}
         </div>
       </div>

@@ -126,7 +126,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
                   : "focus:outline-[#E6EED4] placeholder:text-gray-500" // default outline and placeholder color
                   }`}
                 style={{
-                  outlineColor: error.length > 0 ? 'red' : 'blue', // fallback for outline color
+                  outlineColor: error.length > 0 ? 'red' : '#E6EED4', // fallback for outline color
                 }}
               />
 

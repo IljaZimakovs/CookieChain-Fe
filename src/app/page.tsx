@@ -17,7 +17,7 @@ import MysteryBoxModal from "@/components/MysteryBoxModal";
 
 const PreLoadingScreen = ({ progress }: { progress: number }) => {
   return (
-    <div className="flex w-full min-h-screen flex-col items-center justify-between bg-[#1EB17B] pb-14 gap-6">
+    <div className="flex w-full min-h-screen flex-col items-center bg-[#1EB17B] pb-14 gap-6">
       <div className="w-full bg-[#22CA8C] bg-[url('/images/preloading_background.png'),url('/images/bubbles.png')] bg-[length:100%_100%,cover] bg-no-repeat pb-10">
         <div className="w-full flex justify-center pt-10">
           <Image
@@ -28,7 +28,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
           />
         </div>
       </div>
-      <div className="flex mt-5 gap-1 p-1 px-[10px] items-center bg-white border border-[black] rounded-md">
+      <div className="flex mt-3 gap-1 p-1 px-[10px] items-center bg-white border border-[black] rounded-md">
         <Image
           src={"/images/cookie_logo.png"}
           alt="Cookie Logo"
@@ -49,7 +49,7 @@ const PreLoadingScreen = ({ progress }: { progress: number }) => {
         CookieChain Pre-Testnet is Now Live!
       </p>
 
-      <div className="flex w-full flex-col items-center gap-3 mt-5 px-5">
+      <div className="flex w-full flex-col items-center gap-3 mt-2 px-5">
         <p className="text-[16px] leading-7 text-white text-center font-rubik">
           Loading
         </p>
