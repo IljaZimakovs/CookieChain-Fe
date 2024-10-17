@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </div>
           <div className="px-2 w-full bg-[#1CA774]">
-            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-10 z-20 mt-7 flex-grow pb-40 overflow-hidden">
+            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-10 z-20 mt-7 flex-grow pb-10 overflow-hidden">
               <TaskStatusView
                 currentTask={
                   point > 3000
