@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <div className="px-2 w-full">
             <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-2 z-20 mt-7 flex-grow pb-40 overflow-hidden rounded-tl-2xl rounded-tr-2xl">
-              <div className="bg-white rounded-t-2xl relative top-3 p-4">
+              <div className="bg-white rounded-t-2xl relative top-2 p-4">
                 <TaskStatusView
                   currentTask={
                     point > 3000

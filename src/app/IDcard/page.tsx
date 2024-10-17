@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen bg-[#1CA774]">
-        <div className="pb-28">
-          <div className="px-4 font-[EXO] py-10">
+        <div className="bg-[url('/images/history_background.png')] pt-2 bg-[length:contain] bg-no-repeat pb-28">
+          <div className="bg-white px-4 font-[EXO] py-10">
             <h2 className="text-3xl leading-[2rem] text-white text-center font-rubik">
               Cookie Planet ID Card
             </h2>
