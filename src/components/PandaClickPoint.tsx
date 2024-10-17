@@ -80,12 +80,12 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
 
   return (
     <>
-      <div className="flex w-full flex-col px-6 h-[500px] relative">
+      <div className="flex w-full flex-col px-6 relative">
         <h2 className="text-[24px] text-white py-10 font-rubik font-medium text-center">Home</h2>
         <div className="flex justify-center items-center py-4 bg-[url('/images/charact_background.png')] bg-[length:100%_100%]">
           <img
             onClick={clickPoint}
-            src="/images/cookie_character.png"
+            src="/images/placeholder.png"
             alt="Main Background"
             className="shake-hard w-[60%] h-auto drop-shadow-xl"
           />
@@ -136,7 +136,7 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
           </div>
         </div>
       </div>
-      <div className="px-2 w-full pb-[50px]">
+      <div className="px-2 w-full py-[50px]">
         <PandaPointHistory pointData={pointData} />
       </div>
     </>

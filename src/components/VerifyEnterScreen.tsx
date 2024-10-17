@@ -125,26 +125,26 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
         </div>
       ) : (
         <div className="w-full min-h-screen py-14 px-8 bg-[#1EB17B] font-rubik">
-          <div className="w-full flex bg-white p-4 rounded-2xl flex-col items-center">
-            <p className="w-full py-4 text-center text-black text-2xl leading-8 font-rubik">
+          <div className="w-full py-10 flex bg-white p-4 rounded-2xl flex-col items-center">
+            <p className="w-full py-4 text-center text-black text-[28px] font-medium leading-8 font-rubik">
               An invitation from CookieChain
             </p>
             <div className="flex p-2 items-center">
-              <p className="w-full text-center text-black text-xl pr-1">
+              <p className="w-full text-center text-black text-[20px] font-rubik pr-1">
                 PLEASE CHECK
               </p>
               <Image
                 src={"/images/check.png"}
                 alt="Check"
-                width={28}
-                height={28}
+                width={22}
+                height={22}
               />
             </div>
-            <p className="w-full text-center text-black text-8 pr-1">
+            <p className="w-full text-center text-black text-[14px] font-rubik font-medium pr-1">
               From CookieChain
             </p>
             <div className="flex w-full py-4 gap-4 justify-center items-start mt-5">
-              <span className="flex bg-[#CCE663] py-1 px-4 rounded-full text-black text-[16px] font-[500]">
+              <span className="flex bg-[#CCE663] py-1 px-4 rounded-full text-black text-[14px] font-medium">
                 You have one
               </span>
             </div>
@@ -152,7 +152,7 @@ const VerifyEnterScreen: React.FC<T_VerifyEnterScreen> = ({
               className="mt-5"
               src={"/images/post_box.png"}
               alt="Background"
-              width={220}
+              width={224}
               height={360}
             />
           </div>

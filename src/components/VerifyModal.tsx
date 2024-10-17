@@ -91,13 +91,15 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
       // disablePreventScroll={true}
       dismissible={true}
       nested={false}
-      // preventScrollRestoration={true}
+    // preventScrollRestoration={true}
     >
       <Toaster position="top-center" reverseOrder={isToast} />
       <Drawer.Trigger asChild className="w-full">
-        <button className="flex w-64 h-10 justify-center items-center text-[#0D524D] font-rubik bg-white rounded-full text-base mt-6">
-          Enter
-        </button>
+        <div className="flex my-4 justify-center">
+          <button className="flex w-[276px] h-10 justify-center items-center text-[#0D524D] font-rubik bg-white rounded-full text-[14px] font-medium mt-6">
+            Enter
+          </button>
+        </div>
       </Drawer.Trigger>
       <Drawer.Portal>
         <Drawer.Overlay
@@ -106,10 +108,10 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
             backdropFilter: "blur(0.9px)",
           }}
         />
-        <Drawer.Content className="bg-white flex max-w-xl mx-auto flex-col rounded-t-2xl h-[294px] fixed inset-x-0 bottom-5 z-50 mt-20 border-t-[1.5px] text-black font-rubik p-5">
+        <Drawer.Content className="bg-white flex max-w-xl mx-auto flex-col rounded-t-[30px] h-[294px] fixed inset-x-0 bottom-5 z-50 mt-20 border-t-[1.5px] text-black font-rubik px-6 pt-14">
           <div className="flex w-full flex-col justify-center items-center gap-1">
-            <p className="text-xl text-center">Welcome to CookieChain</p>
-            <p className="text-base text-center mt-1">
+            <p className="text-[20px] font-medium font-rubik text-center">Welcome to CookieChain</p>
+            <p className="text-[16px] font-rubik text-center mt-1">
               Please enter your name below to get an exclusive card
             </p>
             <Input
@@ -118,15 +120,18 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
                 setUsername(e.target.value);
               }}
               placeholder={error.length > 0 ? error : "Enter username"}
-              className={`mt-6 ${
-                error.length > 0
-                  ? "border border-red-500 placeholder:text-red-500"
-                  : ""
-              }`}
+              className={`mt-6 bg-[#F3FAE5] ${error.length > 0
+                ? "border border-[#E6EED4] placeholder:text-red-500 focus:outline-[#E6EED4]" // outline and placeholder red when error
+                : "focus:outline-[#E6EED4] placeholder:text-gray-500" // default outline and placeholder color
+                }`}
+              style={{
+                outlineColor: error.length > 0 ? 'red' : 'blue', // fallback for outline color
+              }}
             />
+
             <button
               onClick={handleVerify}
-              className="flex w-64 h-10 justify-center items-center text-white font-rubik bg-[#189869] rounded-full text-base mt-10 transition-all duration-100"
+              className="flex w-full h-10 justify-center items-center text-white font-rubik bg-[#189869] rounded-full text-base mt-10 transition-all duration-100"
             >
               {isLoading ? (
                 <ClapSpinner
@@ -137,7 +142,7 @@ const VerifyModal: React.FC<T_VerifyModal> = ({
                   loading={isLoading}
                 />
               ) : (
-                <p className="transition-all duration-100">Enter</p>
+                <p className="font-rubik text-[14px] transition-all duration-100">Enter</p>
               )}
             </button>
           </div>

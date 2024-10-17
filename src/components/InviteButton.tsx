@@ -61,7 +61,7 @@ const InviteButton = (userId: any) => {
       <div className="w-[190px]">
         <a
           href={inviteLink}
-          className="flex-1 flex h-10 bg-white text-black text-base font-semibold font-rubik rounded-full justify-center items-center"
+          className="flex-1 flex h-10 bg-white text-black text-[14px] font-semibold font-rubik rounded-full justify-center items-center"
         >
           Invite Friends
         </a>
