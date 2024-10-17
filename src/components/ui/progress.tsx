@@ -57,7 +57,7 @@ const Progress = React.forwardRef<
           textAnchor="middle"
           className="text-[24px] font-bold font-rubik fill-white"
         >
-          <tspan className="text-[24px] font-bold font-rubik">{Math.round(value)}</tspan>
+          <tspan className="text-[24px] font-bold font-rubik">{value}</tspan>
           <tspan className="text-[14px] font-rubik " dx="0.3em" dy="-0.2em">%</tspan>
         </text>
       </svg>
