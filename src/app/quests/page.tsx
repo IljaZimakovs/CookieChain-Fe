@@ -83,8 +83,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="px-2 w-full bg-[#1EB17B]">
-            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-2 z-20 mt-7 flex-grow pb-40 overflow-hidden">
+          <div className="px-2 w-full bg-[#1CA774]">
+            <div className="bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat pt-10 z-20 mt-7 flex-grow pb-40 overflow-hidden">
               <TaskStatusView
                 currentTask={
                   point > 3000
@@ -93,7 +93,7 @@ export default function Home() {
                 }
                 totalTask={point > 3000 ? 3 : 4}
               />
-              <div className="bg-white rounded-t-2xl relative top-2 p-4">
+              <div className="bg-white rounded-t-2xl relative top-2 p-4 pt-2">
                 <div className="relative">
                   {point > 3000 ? (
                     <div className="grid gap-6">
