@@ -38,7 +38,7 @@ const WalletConnectCard: React.FC<T_WalletConnectCard> = ({
       {wallet_address ? (
         <img className="w-[21px]" src="./images/checked.png" />
       ) : (
-        <div className="relative block whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-8 pb-1 h-8">
+        <div className="flex items-center whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-8 h-8">
           <span className="relative z-10">
             <div className="flex items-center">
               <button

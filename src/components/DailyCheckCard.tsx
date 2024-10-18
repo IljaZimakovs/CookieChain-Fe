@@ -75,14 +75,30 @@ const DailyCheckCard: React.FC<T_DailyCheckCard> = ({ setDailyTask }) => {
       {!followed ? (
         <img className="w-[21px]" src="./images/checked.png" />
       ) : (
-        <button
-          onClick={handleDailyCheckIn}
-          className="relative block whitespace-nowrap bg-[url('/images/history_background.png')] bg-[length:contain] font-blod select-none active:scale-95 text-black pointer-events-none rounded-lg w-8 pb-1 h-8"
-        >
-          <span>
-            GO
+        <div className="flex items-center whitespace-nowrap font-blod text-white select-none active:scale-95 bg-white rounded-lg w-8 h-8">
+          <span className="relative z-10">
+            <div className="flex items-center">
+              <button
+                onClick={handleDailyCheckIn}
+                className="text-[20px] text-[#1EB17B] font-rubik font-medium"
+              >
+                GO
+              </button>
+              <img src="./images/arrow.png" className="w-[24px] h-[24px]" />
+            </div>
           </span>
-        </button>
+        </div>
+        // <div className="flex items-center">
+        //   <button
+        //     onClick={handleDailyCheckIn}
+        //     className="relative block whitespace-nowrap text-[20px] text-[#1EB17B] font-rubik font-medium select-none active:scale-95 pointer-events-none rounded-lg w-8 pb-1 h-8"
+        //   >
+        //     <span>
+        //       GO
+        //     </span>
+        //   </button>
+        //   <img src="./images/arrow.png" className="w-[24px] h-auto" />
+        // </div>
       )}
     </div>
   );
