@@ -28,7 +28,7 @@ const MysteryBoxModal: React.FC<T_MysteryBoxModal> = ({
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0 }}
           transition={{ duration: 1 }}
-          className="w-full min-h-screen bg-[url(/images/mistery_box.gif)] bg-cover bg-no-repeat fixed top-0 left-0 z-50"
+          className="w-full min-h-screen bg-[url(/images/sky_effect.png)] bg-cover bg-no-repeat fixed top-0 left-0 z-50"
         >
           <motion.div
             className="flex w-full flex-col items-center font-rubik text-2xl absolute top-48"
