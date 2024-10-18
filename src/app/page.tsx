@@ -12,7 +12,7 @@ import { useTonAddress, useTonWallet } from "@tonconnect/ui-react";
 import Image from "next/image";
 import { Progress } from "@/components/ui/progress";
 import VerifyEnterScreen from "@/components/VerifyEnterScreen";
-import PandaClickPoint from "@/components/PandaClickPoint";
+import CookieClickPoint from "@/components/CookieClickPoint";
 import MysteryBoxModal from "@/components/MysteryBoxModal";
 
 const PreLoadingScreen = ({ progress }: { progress: number }) => {
@@ -245,7 +245,7 @@ export default function Home() {
       ) : (
         <>
           <div className="flex flex-col justify-start bg-[#1CA774] items-center min-h-screen">
-            <PandaClickPoint
+            <CookieClickPoint
               totalPoint={totalPoint}
               setTotalPoint={setTotalPoint}
               setPockNumber={setPockNumber}

@@ -17,7 +17,7 @@ const FriendLists = (firendLists: any) => {
             <div className="flex justify-start items-center gap-3">
               <p className="text-lg">{index + 1}</p>
               <Image
-                src={"/images/panda.jpg"}
+                src={"/images/cookie.jpg"}
                 alt="Cookie Image"
                 width={36}
                 height={36}

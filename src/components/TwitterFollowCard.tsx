@@ -92,7 +92,7 @@ const TwitterFollowCard: React.FC<T_TwitterFollowCard> = ({
         <a
           className={`relative block whitespace-nowrap font-bold  text-white select-none active:scale-95 bg-white rounded-lg w-8 pb-1 h-8 ${isLoading ? "pointer-events-none opacity-50" : ""
             }`}
-          href="https://x.com/PandaChain_io"
+          href="https://x.com/CookieChain_io"
           target="_blank"
           rel="noopener noreferrer"
         >

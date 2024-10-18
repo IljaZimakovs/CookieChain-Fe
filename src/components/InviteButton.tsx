@@ -8,7 +8,7 @@ const InviteButton = (userId: any) => {
   const [isToast, setIsToast] = useState<boolean>(false);
   const [copySupported, setCopySupported] = useState(false);
 
-  const inviteLink = `https://t.me/share/url?text=Join%20me%20in%20Panda%20Chain!&url=https://t.me/pandachain_bot?start=${userId.userId}`;
+  const inviteLink = `https://t.me/share/url?text=Join%20me%20in%20Cookie%20Chain!&url=https://t.me/cookiechain_bot?start=${userId.userId}`;
 
   useEffect(() => {
     if (typeof navigator !== "undefined" && navigator.clipboard) {
@@ -33,7 +33,7 @@ const InviteButton = (userId: any) => {
 
     if (!copySupported) {
       const textArea = document.createElement("textarea");
-      textArea.value = `https://t.me/pandachain_bot?start=${userId.userId}`;
+      textArea.value = `https://t.me/cookiechain_bot?start=${userId.userId}`;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
@@ -41,7 +41,7 @@ const InviteButton = (userId: any) => {
       console.log("Copied to clipboard");
     } else {
       navigator.clipboard
-        .writeText(`https://t.me/pandachain_bot?start=${userId.userId}`)
+        .writeText(`https://t.me/cookiechain_bot?start=${userId.userId}`)
         .then(() => {
           console.log("Copied to clipboard");
         })

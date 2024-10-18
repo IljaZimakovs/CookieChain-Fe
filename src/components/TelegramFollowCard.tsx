@@ -25,7 +25,7 @@ const TelegramFollowCard: React.FC<T_TelegramFollowCard> = ({
     await axios
       .post(
         `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TELEGRAM_BOT_API_KEY}/getChatMember`,
-        { chat_id: "@PandaChainAnn", user_id: userId }
+        { chat_id: "@CookieChainAnn", user_id: userId }
       )
       .then((res) => {
         setSubscribed(res.data.ok);

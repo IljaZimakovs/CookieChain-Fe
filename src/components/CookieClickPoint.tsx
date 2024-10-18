@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import PandaPointHistory from "./PandaPointHistory";
+import CookiePointHistory from "./CookiePointHistory";
 import axios from "axios";
 import useUserStore from "@/store/useStore";
 import { motion, AnimatePresence } from "framer-motion";
@@ -17,13 +17,13 @@ interface T_PointData {
   __v: number;
 }
 
-interface T_PandaClickPoint {
+interface T_CookieClickPoint {
   totalPoint: number;
   setTotalPoint: React.Dispatch<React.SetStateAction<number>>;
   setPockNumber: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
+const CookieClickPoint: React.FC<T_CookieClickPoint> = ({
   totalPoint,
   setTotalPoint,
   setPockNumber,
@@ -137,10 +137,10 @@ const PandaClickPoint: React.FC<T_PandaClickPoint> = ({
         </div>
       </div>
       <div className="px-2 w-full py-[50px]">
-        <PandaPointHistory pointData={pointData} />
+        <CookiePointHistory pointData={pointData} />
       </div>
     </>
   );
 };
 
-export default PandaClickPoint;
+export default CookieClickPoint;

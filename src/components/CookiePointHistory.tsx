@@ -11,11 +11,11 @@ interface T_PointData {
   __v: number;
 }
 
-interface PandaPointHistoryProps {
+interface CookiePointHistoryProps {
   pointData: T_PointData[];
 }
 
-const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
+const CookiePointHistory: React.FC<CookiePointHistoryProps> = ({ pointData }) => {
   return (
     <div className="w-full bg-[url('/images/history_background.png')] bg-[length:contain] bg-no-repeat">
       <p className="text-black text-[20px] font-medium pt-10 px-4 font-rubik leading-7">Cookie Points</p>
@@ -57,4 +57,4 @@ const PandaPointHistory: React.FC<PandaPointHistoryProps> = ({ pointData }) => {
   );
 };
 
-export default PandaPointHistory;
+export default CookiePointHistory;
