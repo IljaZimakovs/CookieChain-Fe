@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen w-full bg-[#1CA774] px-2 flex flex-col justify-end pb-[110px]">
+      <div className="min-h-screen w-full bg-[#1CA774] bg-[url('/images/idcard_background.png')] bg-[length:contain] px-2 flex flex-col justify-end pb-[110px]">
         <div className="relative bg-[url('/images/history_background.png')] pt-14 bg-[length:contain] bg-no-repeat">
           <img
             src={"/images/cookie_id_logo.png"}
